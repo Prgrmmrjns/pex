@@ -1,0 +1,10 @@
+2025-04-09 22:15:54,402 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (22,)
+Traceback (most recent call last):
+  File "/Users/jwolber/anaconda3/envs/newest/lib/python3.12/site-packages/pyswarms/backend/generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+                   ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 1171, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 600, in numpy.random._common.cont
+  File "_common.pyx", line 517, in numpy.random._common.cont_broadcast_2
+  File "__init__.cython-30.pxd", line 780, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (300, 22) and arg 1 with shape (300, 23).
